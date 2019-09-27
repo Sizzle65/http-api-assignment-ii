@@ -25,7 +25,7 @@ const getUsers = (request, response) => {
 };
 
 const getUsersMeta = (request, response) => {
-
+ 
   respondJSONMeta(request, response, 200);
 };
 
@@ -76,23 +76,23 @@ const addUser = (request, response, body) => {
 // return user object as JSON
 const notReal = (request, response) => {
   const responseJSON = {
-    message: "The page you are looking for was not found.",
-    id: "not found"
+    message: 'The page you are looking for was not found.',
+    id: 'not found',
   };
 
   respondJSON(request, response, 404, responseJSON);
 };
 
 const notRealMeta = (request, response) => {
-
+  
   respondJSONMeta(request, response, 404);
 };
 
 // return user object as JSON
 const notFound = (request, response) => {
   const responseJSON = {
-    message: "The page you are looking for was not found.",
-    id: "not found"
+    message: 'The page you are looking for was not found.',
+    id: 'not found',
   };
 
   respondJSON(request, response, 404, responseJSON);
